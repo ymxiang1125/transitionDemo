@@ -92,7 +92,7 @@
 			}else{
 				document.getElementsByClassName("btn")[0].getElementsByTagName('a')[1].style.backgroundColor="#dca";
 				document.getElementsByClassName('page')[curIndex].style.transform="rotateX(90deg)";
-				curIndex=curIndex-1;
+				curIndex--;
 				document.getElementsByClassName('page')[curIndex].style.transform="rotateX(0deg)";
 				if (curIndex==0) {
 				document.getElementsByClassName("btn")[0].getElementsByTagName('a')[0].style.backgroundColor="#ccc";}
@@ -102,7 +102,7 @@
 		function next(){
 			if (curIndex<pageLen-1) {
 				document.getElementsByClassName('page')[curIndex].style.transform="rotateX(-90deg)";
-				curIndex=curIndex+1;
+				curIndex++;
 				document.getElementsByClassName('page')[curIndex].style.transform="rotateX(0deg)";
 				document.getElementsByClassName("btn")[0].getElementsByTagName('a')[0].style.backgroundColor="#dca";
 				if (curIndex==pageLen-1) {
